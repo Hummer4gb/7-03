@@ -87,6 +87,20 @@ output "external_ip_address_vm_2" {
 }
 ```
 
+Содержимое файла meta.txt
+
+```
+#cloud-config
+users:
+  - name: hummer4gb
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-ed25519 ххх
+```
+
+
 результат
 
 ![task](/1.png "Задание 1")
